@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+form {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+form h2 {
+  text-align: center;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+  padding: 0.5rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid #263fba;
+  padding: 0.5rem 1rem;
+  background-color: #263fba;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c2e87;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/*input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  border: 1px solid gray;
+}*/
+
+.field input:not([type="radio"]):not([type="checkbox"]),
+.field select,
+.field textarea {
+  width: 100%;
+}
+
+.controls {
+  padding: 0.5rem 0;
+  text-align: right;
+}
+
+.field {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: min(30vw, 9.5rem) 1fr;
+  align-items: baseline;
+  gap: 1em;
+  text-align: right;
+}
+
+
+
+.input--red:focus {
+  border-width: 6px;
+  border-style: solid;
+  border-color: red;
+}
+
+.input--green:focus {
+  border-width: 6px;
+  border-style: solid;
+  border-color: green;
+}
